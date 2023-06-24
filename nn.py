@@ -54,9 +54,6 @@ class ReLU(Module):
             out_list.append(out)
         return out_list
     
-    def parameters(self):
-        return []
-    
 class Sigmoid(Module):
     def __call__(self, x):
         out_list = []
