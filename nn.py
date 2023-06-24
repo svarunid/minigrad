@@ -51,7 +51,7 @@ class ReLU(Module):
             def _backward():
                 i.grad += (out.data > 0) * out.grad
             i._backwards = _backward
-            out_list.append(i)
+            out_list.append(out)
         return out_list
     
     def parameters(self):
